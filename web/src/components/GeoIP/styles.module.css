@@ -1,0 +1,18 @@
+.title{
+    font-weight: 200;
+    font-size: 1.5em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+.info{
+    margin:.5em 0;
+}
+.detail{
+    font-weight: 100;
+    color: gray;
+    font-style: normal;
+    
+}
+.detailinfo{
+    font-weight: 400;
+}

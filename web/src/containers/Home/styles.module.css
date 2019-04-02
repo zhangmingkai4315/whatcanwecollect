@@ -1,0 +1,17 @@
+.BtnBox {
+    text-align: center;
+}
+
+.StartBtn{
+    background: transparent;
+    border: 1px solid #d8d8d8;
+    padding: 5px 10px;
+    font-weight: 200;
+    cursor: pointer;
+    margin: 10px;
+    border-radius: 3px;
+}
+
+.StartBtn:hover{
+    background-color: #e6e6e6;
+}

@@ -1,6 +1,6 @@
 .Header {
     text-align: center;
-    margin: 2em 0;
+    margin: 2em 0 .5em;
     font-weight: 200;
 }
 .Header > p {
@@ -8,11 +8,10 @@
     margin: 0;
 }
 .Header > h3{
+    font-size: 100px;
     font-weight: 200;
 }
 .Header > h3 > b {
     font-weight: 700;
 }
-.StartBtn{
-    
-}
+
