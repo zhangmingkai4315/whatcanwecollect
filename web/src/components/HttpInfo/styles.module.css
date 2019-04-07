@@ -1,0 +1,10 @@
+.httpInfo{
+    margin: 5px;
+}
+.httpInfo > table > tbody > tr> th {
+    font-weight: 400;
+}
+
+tr th:nth-child(1){
+    font-weight: 600!important;
+}

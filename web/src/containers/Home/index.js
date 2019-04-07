@@ -4,11 +4,18 @@ import { connect } from 'react-redux';
 import { beginDataCollection } from './actions';
 import styles from './styles.module.css';
 import GeoIP from '../../components/GeoIP';
+import HTTPInfo from '../../components/HttpInfo';
 
 class Home extends Component {
     renderGeoIPInfo = () => {
         if (this.props.home.geoip) {
             return <GeoIP data={this.props.home.geoip} />
+        }
+        return null
+    }
+    renderHTTPHeaderInfo = () => {
+        if (this.props.home.headers) {
+            return <HTTPInfo data={this.props.home.headers} />
         }
         return null
     }
@@ -23,6 +30,7 @@ class Home extends Component {
 
                 </div>
                 {this.renderGeoIPInfo()}
+                {this.renderHTTPHeaderInfo()}
             </div>
         )
     }

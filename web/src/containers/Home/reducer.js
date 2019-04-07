@@ -1,11 +1,13 @@
 import {
     CLIENT_SET,
     CLIENT_UNSET,
-    HOME_GET_GEOIPINFO_SUCCESS
+    HOME_GET_GEOIPINFO_SUCCESS,
+    HOME_GET_HTTP_HEADER_SUCCESS
 } from './constants'
 const initialState = {
     id: null,
     geoip: null,
+    headers: null,
 }
 
 const reducer = function clientReducer(state = initialState, action) {
@@ -22,6 +24,11 @@ const reducer = function clientReducer(state = initialState, action) {
             return {
                 ...state,
                 geoip: action.geoinfo
+            }
+        case HOME_GET_HTTP_HEADER_SUCCESS:
+            return {
+                ...state,
+                headers: action.headers,
             }
         default:
             return state
